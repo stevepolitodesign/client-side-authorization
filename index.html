@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-secondary">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="w-50 mx-auto bg-light shadow-sm p-3 rounded border">
+            <h1>Opt In</h1>
+            <p>Fill out the form in order to view the <a href="/secret-page.html">secret page</a></p>
+            <form action="/secret-page.html">
+                <div class="form-group">
+                    <label for="name">Name<sup class="color-red">*</sup></label>
+                    <input type="text" name="name" id="name" class="form-control">
+                    <label for="name">Email<sup class="color-red">*</sup></label>
+                    <input type="Email" name="Email" id="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
