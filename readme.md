@@ -2,6 +2,8 @@
 
 This codebase demonstrates how to create simple client-side "authorization". Specifically, it demonstrates how to prevent a user from viewing a specific page unless they fill out an opt-in form.
 
+![demonstration](./demo.gif)
+
 ## Use Cases
 
 This solution should only be used if your project meets the following criteria:
