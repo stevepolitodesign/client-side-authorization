@@ -32,7 +32,7 @@ This solution should only be used if your project meets the following criteria:
     const form = new formRedirect('form');
 </script>
 ```
-2. `formRedirect(el)` takes one DOMElement as a requried argument.
+2. `formRedirect(form)` takes the `ID`, `class` or `tag` of the `form`.
 3. On the page(s) that need to be private, add the following before the closing `</head>` tag.
 
 ```
