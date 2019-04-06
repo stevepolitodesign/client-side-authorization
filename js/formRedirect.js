@@ -18,7 +18,7 @@ class formRedirect {
     whiteListURL(url) {
         if(!url) { return; }
 
-        let urls = this.getWhistListURLs();
+        let urls = this.getWhiteListURLs();
 
         if ( urls.indexOf(url) === -1 ) {
             urls.push(url);
@@ -27,7 +27,7 @@ class formRedirect {
         
     }
 
-    getWhistListURLs() {
+    getWhiteListURLs() {
         return localStorage.getItem('whiteListedUrls') ? JSON.parse(localStorage.getItem('whiteListedUrls')) : [];
     }
 
