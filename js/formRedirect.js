@@ -11,7 +11,13 @@ class formRedirect {
         this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             this.whiteListURL(this.url);
-            window.location = this.url;
+            
+            // https://www.netlify.com/docs/form-handling/#ajax-form-submissions
+            var $form = $(this.form);
+            $.post($form.attr("action"), $form.serialize()).then(function() {
+                window.location = this.url;
+            });
+
         });
     }
 
