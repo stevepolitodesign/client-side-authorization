@@ -1,6 +1,6 @@
 # Introduction
 
-This codebase demonstrates how to create simple client-side "authorization". Specifically, it demonstrates how to prevent a user from viewing a specific page unless they fill out an opt-in form.
+This codebase demonstrates how to create simple client-side "authorization". Specifically, it demonstrates how to prevent a user from viewing a specific page unless they fill out an opt-in form on Netlify.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevepolitodesign/client-side-authorization)
 
