@@ -12,16 +12,16 @@ This solution should only be used if your project meets the following criteria:
 
 1. Your site is hosted at [Netlify](https://www.netlify.com/)
 1. Your website is static, and is only client-side
-1. You want collect leads.
-1. You want to ensure the private page can't be easily accessed by bypassing the form.
-1. The data on the private page is not sensitive.
+1. You want collect leads
+1. You want to ensure the private page can't be easily accessed by bypassing the form
+1. The data on the private page is not sensitive
 
 ## Important Notes
 
-- Everything is client-side.
-- There is no authentication.
-- "Authorization" is handled through [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
-- You'll want to add a `robots.txt` file and `Disallow` all private pages. This will help ensure the data won't be crawled and exposed on search engines.
+- Everything is client-side
+- There is no authentication
+- "Authorization" is handled through [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- You'll want to add a `robots.txt` file and `Disallow` all private pages. This will help ensure the data won't be crawled and exposed on search engines
 
 ---
 
