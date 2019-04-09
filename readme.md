@@ -2,13 +2,16 @@
 
 This codebase demonstrates how to create simple client-side "authorization". Specifically, it demonstrates how to prevent a user from viewing a specific page unless they fill out an opt-in form.
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevepolitodesign/client-side-authorization/tree/netlify)
+
 ![demonstration](./demo.gif)
 
 ## Use Cases
 
 This solution should only be used if your project meets the following criteria:
 
-1. Your website is static, and is only client-side.
+1. Your site is hosted at [Netlify](https://www.netlify.com/)
+1. Your website is static, and is only client-side
 1. You want collect leads.
 1. You want to ensure the private page can't be easily accessed by bypassing the form.
 1. The data on the private page is not sensitive.
@@ -27,6 +30,7 @@ This solution should only be used if your project meets the following criteria:
 1. On the page(s) with the opt-in form, add the following before the closing `</body>` tag.
 
 ```
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="/js/formRedirect.js"></script>
 <script>
     const form = new formRedirect('form');
