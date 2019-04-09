@@ -12,7 +12,8 @@
         <div class="w-50 mx-auto bg-light shadow-sm p-3 rounded border">
             <h1>Opt In</h1>
             <p>Fill out the form in order to view the <a href="/private-page">private page</a></p>
-            <form action="/private-page">
+            <!-- https://www.netlify.com/docs/form-handling/ -->
+            <form action="/private-page" method="POST" data-netlify="true">
                 <div class="form-group">
                     <label for="name">Name<sup class="text-danger">*</sup></label>
                     <input type="text" name="name" id="name" class="form-control" required>
